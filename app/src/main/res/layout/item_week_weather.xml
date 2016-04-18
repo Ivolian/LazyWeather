@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_heightPercent="20%sh">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_heightPercent="20%sh"
+            app:layout_widthPercent="50%w">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昨日"
+                android:textColor="@color/md_white"
+                app:layout_textSizePercent="3%sh" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="04/18"
+                android:textColor="@color/md_white"
+                app:layout_textSizePercent="2.2%sh" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            app:layout_heightPercent="20%sh"
+            app:layout_widthPercent="50%w">
+
+            <com.zhy.android.percent.support.PercentFrameLayout
+                android:id="@+id/bg"
+                app:layout_heightPercent="12%sh"
+                app:layout_widthPercent="12%sh"
+                android:background="@color/md_amber_400"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+/>
+
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentFrameLayout>
