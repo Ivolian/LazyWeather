@@ -5,11 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import femade.lazyweather.weekWeather.DataProvider;
 import femade.lazyweather.weekWeather.WeekWeatherAdapter;
 import femade.lazyweather.weekWeather.model.WeekWeatherData;
 
@@ -38,21 +38,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void initRvWeekWeather() {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        WeekWeatherAdapter adapter = new WeekWeatherAdapter(generateDataList());
+        List<WeekWeatherData> dataList = DataProvider.getDataList();
+        WeekWeatherAdapter adapter = new WeekWeatherAdapter(dataList);
         recyclerView.setAdapter(adapter);
         recyclerView.hasFixedSize();
-    }
-
-    private List<WeekWeatherData> generateDataList() {
-        List<WeekWeatherData> dataList = new ArrayList<>();
-        // todo
-        dataList.add(new WeekWeatherData());
-        dataList.add(new WeekWeatherData());
-        dataList.add(new WeekWeatherData());
-        dataList.add(new WeekWeatherData());
-        dataList.add(new WeekWeatherData());
-        dataList.add(new WeekWeatherData());
-        return dataList;
     }
 
 

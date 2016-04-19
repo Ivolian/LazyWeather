@@ -1,15 +1,15 @@
 package femade.lazyweather.weekWeather;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
-import com.zhy.android.percent.support.PercentFrameLayout;
+import com.zhy.android.percent.support.PercentLinearLayout;
 
 import java.util.List;
 
@@ -35,12 +35,23 @@ public class WeekWeatherAdapter extends RecyclerView.Adapter<WeekWeatherAdapter.
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        @Bind(R.id.bg)
-        PercentFrameLayout pflBg;
+        @Bind(R.id.tvWeekdayOrWeekend)
+        TextView tvWeekDayOrWeekend;
+
+        @Bind(R.id.tvMonthAndDay)
+        TextView tvMonthAndDay;
+
+        @Bind(R.id.square)
+        PercentLinearLayout pflSquare;
+
+        @Bind(R.id.tvWeather)
+        TextView tvWeather;
+
+        @Bind(R.id.tvTemperature)
+        TextView tvTemperature;
 
         public ViewHolder(View v) {
             super(v);
-            // yesterday's question, my fault.
             ButterKnife.bind(this, v);
         }
 
@@ -51,32 +62,23 @@ public class WeekWeatherAdapter extends RecyclerView.Adapter<WeekWeatherAdapter.
 
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, final int position) {
-        Context context = viewHolder.pflBg.getContext();
-        int bgColor = 0;
-        switch (position) {
-            case 0:
-            case 1:
-            case 2:
-                bgColor = ContextCompat.getColor(context, R.color.md_light_blue_300);
-                break;
-            case 3:
-                bgColor = ContextCompat.getColor(context, R.color.md_green_200);
+        WeekWeatherData weekWeatherData = dataList.get(position);
+        viewHolder.tvMonthAndDay.setText(weekWeatherData.getMonthAndDay());
+        viewHolder.tvWeekDayOrWeekend.setText(weekWeatherData.getWeekdayOrWeekend());
+        Context context = viewHolder.pflSquare.getContext();
+        int color1 = ContextCompat.getColor(context, weekWeatherData.getColor1());
+        viewHolder.tvMonthAndDay.setTextColor(color1);
+        viewHolder.tvWeekDayOrWeekend.setTextColor(color1);
 
-                break;
-            case 4:
-                bgColor = ContextCompat.getColor(context, R.color.md_pink_300);
-
-                break;
-            case 5:
-                bgColor = ContextCompat.getColor(context, R.color.md_orange_300);
-                break;
-        }
-
-        // corner
+        //
+        viewHolder.tvWeather.setText(weekWeatherData.getWeather());
+        viewHolder.tvTemperature.setText(weekWeatherData.getTemperature());
+        int color2 = ContextCompat.getColor(context, weekWeatherData.getColor2());
         GradientDrawable gradientDrawable = new GradientDrawable();
-        gradientDrawable.setColor(bgColor);
+        gradientDrawable.setColor(color2);
         gradientDrawable.setCornerRadius(10);
-        viewHolder.pflBg.setBackground(gradientDrawable);
+        viewHolder.pflSquare.setBackground(gradientDrawable);
+
     }
 
     @Override
@@ -91,14 +93,4 @@ public class WeekWeatherAdapter extends RecyclerView.Adapter<WeekWeatherAdapter.
     }
 
 
-    private int colorBurn(int RGBValues) {
-        //int alpha = RGBValues >> 24;
-        int red = RGBValues >> 16 & 0xFF;
-        int green = RGBValues >> 8 & 0xFF;
-        int blue = RGBValues & 0xFF;
-        red = (int) Math.floor(red * (1 + 0.1));
-        green = (int) Math.floor(green * (1 + 0.1));
-        blue = (int) Math.floor(blue * (1 + 0.1));
-        return Color.rgb(red, green, blue);
-    }
 }

@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class WeekWeatherData implements Serializable {
 
-    private String weekdayAndWeekend;
+    private String weekdayOrWeekend;
 
     private String monthAndDay;
 
@@ -12,14 +12,18 @@ public class WeekWeatherData implements Serializable {
 
     private String temperature;
 
+    private int color1;
+
+    private int color2;
+
     //
 
-    public String getWeekdayAndWeekend() {
-        return weekdayAndWeekend;
+    public String getWeekdayOrWeekend() {
+        return weekdayOrWeekend;
     }
 
-    public void setWeekdayAndWeekend(String weekdayAndWeekend) {
-        this.weekdayAndWeekend = weekdayAndWeekend;
+    public void setWeekdayOrWeekend(String weekdayOrWeekend) {
+        this.weekdayOrWeekend = weekdayOrWeekend;
     }
 
     public String getMonthAndDay() {
@@ -44,6 +48,24 @@ public class WeekWeatherData implements Serializable {
 
     public void setTemperature(String temperature) {
         this.temperature = temperature;
+    }
+
+    //
+
+    public int getColor1() {
+        return color1;
+    }
+
+    public void setColor1(int color1) {
+        this.color1 = color1;
+    }
+
+    public int getColor2() {
+        return color2;
+    }
+
+    public void setColor2(int color2) {
+        this.color2 = color2;
     }
 
 }
