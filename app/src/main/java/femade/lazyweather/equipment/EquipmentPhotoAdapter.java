@@ -9,11 +9,11 @@ import java.util.List;
 /**
  * Created by Administrator on 2016/4/20.
  */
-public class EquipmentPhotoPagerAdapter extends PagerAdapter {
+public class EquipmentPhotoAdapter extends PagerAdapter {
 
     List<View> viewList;
 
-    public EquipmentPhotoPagerAdapter(List<View> viewList) {
+    public EquipmentPhotoAdapter(List<View> viewList) {
         this.viewList = viewList;
     }
 

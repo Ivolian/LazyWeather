@@ -8,18 +8,17 @@ import android.graphics.drawable.StateListDrawable;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-public class ColorButton extends TextView {
+public class ColorfulButton extends TextView {
 
-    public ColorButton(Context context) {
+    public ColorfulButton(Context context) {
         super(context);
     }
 
     //
 
-    public ColorButton(Context context, AttributeSet attrs) {
+    public ColorfulButton(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        // 最终绘图的单位是像素
         int cornerRadius = dp2px(context, 2);
 
         final int textColor = getCurrentTextColor();

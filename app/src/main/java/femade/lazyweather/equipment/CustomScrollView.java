@@ -4,9 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ScrollView;
 
-/**
- * Created by Administrator on 2016/4/20.
- */
+
 public class CustomScrollView extends ScrollView {
 
     public CustomScrollView(Context context) {
@@ -29,24 +27,18 @@ public class CustomScrollView extends ScrollView {
         this.onScrollListener = onScrollListener;
     }
 
-
-
-
     @Override
     protected void onScrollChanged(int l, int t, int oldl, int oldt) {
         super.onScrollChanged(l, t, oldl, oldt);
-//        Log.e("result",t+"");
-
         if (onScrollListener != null) {
             onScrollListener.onScroll(t, t - oldt);
         }
     }
 
-//
+    //
 
     public interface OnScrollListener {
         void onScroll(int scrollY, int direction);
     }
-
 
 }

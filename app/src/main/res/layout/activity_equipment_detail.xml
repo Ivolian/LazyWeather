@@ -2,9 +2,7 @@
 <com.zhy.android.percent.support.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
+    android:layout_height="match_parent">
 
     <femade.lazyweather.equipment.CustomScrollView
         android:id="@+id/scrollView"
@@ -20,14 +18,12 @@
             <com.zhy.android.percent.support.PercentFrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-
                 app:layout_heightPercent="40%sh">
 
                 <android.support.v4.view.ViewPager
                     android:id="@+id/viewpager"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    app:layout_heightPercent="40%sh" />
+                    android:layout_height="match_parent" />
 
                 <me.relex.circleindicator.CircleIndicator
                     android:id="@+id/indicator"
@@ -503,6 +499,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <!-- 标题栏 -->
         <com.zhy.android.percent.support.PercentLinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -512,21 +509,20 @@
                 android:id="@+id/titleBar"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:background="@color/md_white"
                 android:gravity="center_vertical"
                 app:layout_heightPercent="10%sh">
 
                 <com.zhy.android.percent.support.PercentFrameLayout
-
-                    android:id="@+id/cancel"
+                    android:id="@+id/cancelContainer"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
                     app:layout_heightPercent="9%sh"
                     app:layout_widthPercent="9%sh">
 
                     <com.mikepenz.iconics.view.IconicsImageView
-                        android:id="@+id/back"
+                        android:id="@+id/cancel"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:layout_gravity="center"
@@ -542,27 +538,35 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:clickable="true"
                     android:gravity="center"
                     android:text="设备详情"
                     android:textColor="@color/md_white"
                     app:layout_textSizePercent="3.2%sh" />
 
-                <TextView
-                    android:id="@+id/action"
+                <com.zhy.android.percent.support.PercentFrameLayout
+                    android:id="@+id/operate"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:gravity="center_vertical"
-                    android:text="操作"
-                    android:textColor="@color/md_white"
+                    android:clickable="true"
                     android:visibility="invisible"
                     app:layout_heightPercent="9%sh"
-                    app:layout_textSizePercent="2.8%sh"
-                    app:layout_widthPercent="9%sh" />
+                    app:layout_widthPercent="9%sh">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="操作"
+                        android:textColor="@color/colorPrimary"
+                        app:layout_textSizePercent="2.8%sh" />
+
+                </com.zhy.android.percent.support.PercentFrameLayout>
 
             </com.zhy.android.percent.support.PercentLinearLayout>
 
             <View
-                android:id="@+id/line"
+                android:id="@+id/titleBarLine"
                 android:layout_width="match_parent"
                 android:layout_height="0.3dp"
                 android:background="@color/md_grey_300"
@@ -580,7 +584,7 @@
             app:layout_heightPercent="100%sh">
 
             <com.zhy.android.percent.support.PercentLinearLayout
-                android:id="@+id/content"
+                android:id="@+id/panel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/md_white"
@@ -591,11 +595,9 @@
                 <com.zhy.android.percent.support.PercentLinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/md_white"
+                    android:background="@color/md_white">
 
-                    >
-
-                    <femade.lazyweather.equipment.ColorButton
+                    <femade.lazyweather.equipment.ColorfulButton
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="16dp"
@@ -606,7 +608,7 @@
                         android:textColor="@color/colorPrimary"
                         app:layout_textSizePercent="2.8%sh" />
 
-                    <femade.lazyweather.equipment.ColorButton
+                    <femade.lazyweather.equipment.ColorfulButton
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="16dp"
@@ -617,7 +619,7 @@
                         android:textColor="@color/colorPrimary"
                         app:layout_textSizePercent="2.8%sh" />
 
-                    <femade.lazyweather.equipment.ColorButton
+                    <femade.lazyweather.equipment.ColorfulButton
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="16dp"
@@ -633,11 +635,10 @@
                 <com.zhy.android.percent.support.PercentLinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/md_white"
                     android:layout_marginTop="16dp"
-                    >
+                    android:background="@color/md_white">
 
-                    <femade.lazyweather.equipment.ColorButton
+                    <femade.lazyweather.equipment.ColorfulButton
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="16dp"
@@ -648,7 +649,7 @@
                         android:textColor="@color/colorPrimary"
                         app:layout_textSizePercent="2.8%sh" />
 
-                    <femade.lazyweather.equipment.ColorButton
+                    <femade.lazyweather.equipment.ColorfulButton
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="16dp"
@@ -659,7 +660,7 @@
                         android:textColor="@color/colorPrimary"
                         app:layout_textSizePercent="2.8%sh" />
 
-                    <femade.lazyweather.equipment.ColorButton
+                    <femade.lazyweather.equipment.ColorfulButton
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="16dp"
@@ -672,12 +673,12 @@
 
                 </com.zhy.android.percent.support.PercentLinearLayout>
 
-
             </com.zhy.android.percent.support.PercentLinearLayout>
 
         </com.zhy.android.percent.support.PercentLinearLayout>
 
     </com.zhy.android.percent.support.PercentLinearLayout>
+
 </com.zhy.android.percent.support.PercentFrameLayout>
 
 
