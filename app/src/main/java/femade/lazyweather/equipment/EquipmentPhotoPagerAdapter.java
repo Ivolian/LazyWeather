@@ -25,7 +25,7 @@ public class EquipmentPhotoPagerAdapter extends PagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return viewList.size();
     }
 
     @Override

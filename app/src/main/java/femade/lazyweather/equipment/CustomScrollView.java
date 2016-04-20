@@ -30,10 +30,7 @@ public class CustomScrollView extends ScrollView {
     }
 
 
-    @Override
-    protected void onOverScrolled(int scrollX, int scrollY, boolean clampedX, boolean clampedY) {
-        super.onOverScrolled(scrollX, scrollY, clampedX, clampedY);
-    }
+
 
     @Override
     protected void onScrollChanged(int l, int t, int oldl, int oldt) {

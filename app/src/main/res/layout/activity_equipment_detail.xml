@@ -6,8 +6,6 @@
     android:orientation="vertical">
 
 
-
-
     <femade.lazyweather.equipment.CustomScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
@@ -21,9 +19,9 @@
 
             <com.zhy.android.percent.support.PercentFrameLayout
                 android:layout_width="match_parent"
-                app:layout_heightPercent="40%sh"
+                android:layout_height="0dp"
 
-                android:layout_height="0dp">
+                app:layout_heightPercent="40%sh">
 
                 <android.support.v4.view.ViewPager
                     android:id="@+id/viewpager"
@@ -35,8 +33,7 @@
                     android:id="@+id/indicator"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
-                    android:layout_gravity="bottom"
-                    />
+                    android:layout_gravity="bottom" />
 
             </com.zhy.android.percent.support.PercentFrameLayout>
 
@@ -336,6 +333,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0.3dp"
                 android:background="@color/md_grey_300" />
+
             <com.zhy.android.percent.support.PercentLinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -367,6 +365,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0.3dp"
                 android:background="@color/md_grey_300" />
+
             <com.zhy.android.percent.support.PercentLinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -398,6 +397,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0.3dp"
                 android:background="@color/md_grey_300" />
+
             <com.zhy.android.percent.support.PercentLinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -429,6 +429,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0.3dp"
                 android:background="@color/md_grey_300" />
+
             <com.zhy.android.percent.support.PercentLinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -460,6 +461,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0.3dp"
                 android:background="@color/md_grey_300" />
+
             <com.zhy.android.percent.support.PercentLinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -496,77 +498,186 @@
 
     </femade.lazyweather.equipment.CustomScrollView>
 
-
-
-
-
-
-<com.zhy.android.percent.support.PercentLinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-
-
     <com.zhy.android.percent.support.PercentLinearLayout
-        android:id="@+id/titleBar"
-        android:background="@color/md_white"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:gravity="center_vertical"
-        app:layout_heightPercent="10%sh">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <com.zhy.android.percent.support.PercentFrameLayout
-
-            android:id="@+id/cancel"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            app:layout_heightPercent="9%sh"
-            app:layout_widthPercent="9%sh">
-
-            <com.mikepenz.iconics.view.IconicsImageView
-                android:id="@+id/back"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_gravity="center"
-                app:iiv_color="@color/md_white"
-                app:iiv_icon="ion-ios-arrow-left"
-                app:layout_heightPercent="3.0%sh"
-                app:layout_widthPercent="3.0%sh" />
-
-        </com.zhy.android.percent.support.PercentFrameLayout>
-
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="0dp"
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="设备详情"
-            android:textColor="@color/md_white"
-            app:layout_textSizePercent="3.2%sh" />
+            android:orientation="vertical">
 
-        <TextView
-android:visibility="invisible"
-            android:layout_width="0dp"
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/titleBar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/md_white"
+                android:gravity="center_vertical"
+                app:layout_heightPercent="10%sh">
+
+                <com.zhy.android.percent.support.PercentFrameLayout
+
+                    android:id="@+id/cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:layout_heightPercent="9%sh"
+                    app:layout_widthPercent="9%sh">
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:id="@+id/back"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        app:iiv_color="@color/md_white"
+                        app:iiv_icon="ion-ios-arrow-left"
+                        app:layout_heightPercent="3.0%sh"
+                        app:layout_widthPercent="3.0%sh" />
+
+                </com.zhy.android.percent.support.PercentFrameLayout>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="设备详情"
+                    android:textColor="@color/md_white"
+                    app:layout_textSizePercent="3.2%sh" />
+
+                <TextView
+                    android:id="@+id/action"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center_vertical"
+                    android:text="操作"
+                    android:textColor="@color/md_white"
+                    android:visibility="invisible"
+                    app:layout_heightPercent="9%sh"
+                    app:layout_textSizePercent="2.8%sh"
+                    app:layout_widthPercent="9%sh" />
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/md_grey_300"
+                android:visibility="invisible" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/mask"
+            android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:gravity="center_vertical"
-            android:text="操作"
-            android:textColor="@color/md_white"
-            app:layout_heightPercent="9%sh"
-            app:layout_textSizePercent="2.8%sh"
-            app:layout_widthPercent="9%sh" />
+            android:background="#7f000000"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_heightPercent="100%sh">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/md_white"
+
+                    >
+
+                    <femade.lazyweather.equipment.ColorButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="报修"
+                        android:textColor="@color/colorPrimary"
+                        app:layout_textSizePercent="2.8%sh" />
+
+                    <femade.lazyweather.equipment.ColorButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="巡检"
+                        android:textColor="@color/colorPrimary"
+                        app:layout_textSizePercent="2.8%sh" />
+
+                    <femade.lazyweather.equipment.ColorButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="保养"
+                        android:textColor="@color/colorPrimary"
+                        app:layout_textSizePercent="2.8%sh" />
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/md_white"
+                    android:layout_marginTop="16dp"
+                    >
+
+                    <femade.lazyweather.equipment.ColorButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="报废"
+                        android:textColor="@color/colorPrimary"
+                        app:layout_textSizePercent="2.8%sh" />
+
+                    <femade.lazyweather.equipment.ColorButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="领用"
+                        android:textColor="@color/colorPrimary"
+                        app:layout_textSizePercent="2.8%sh" />
+
+                    <femade.lazyweather.equipment.ColorButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="维修"
+                        android:textColor="@color/colorPrimary"
+                        app:layout_textSizePercent="2.8%sh" />
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
 
     </com.zhy.android.percent.support.PercentLinearLayout>
-    <View
-        android:visibility="invisible"
-        android:id="@+id/line"
-        android:layout_width="match_parent"
-        android:layout_height="0.3dp"
-        android:background="@color/md_grey_300" />
-
-    </com.zhy.android.percent.support.PercentLinearLayout>
-
 </com.zhy.android.percent.support.PercentFrameLayout>
 
 
