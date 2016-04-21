@@ -1,12 +1,18 @@
 package femade.lazyweather;
 
 import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SlidingPaneLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.WindowManager;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.List;
 
@@ -33,8 +39,23 @@ public class MainActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         initRvWeekWeather();
         initSlidingPanel();
+
+        String url =  "http://tu.webps.cn/tb/img/4/TB1qYlmHVXXXXaUXpXXXXXXXXXX_%21%210-item_pic.jpg";
+        Glide.with(this).load(url).into(ivCloth);
+
+
+        GradientDrawable gradientDrawable =new GradientDrawable();
+        gradientDrawable.setColor(ContextCompat.getColor(this,R.color.md_pink_300));
+        gradientDrawable.setAlpha(170);
+        gradientDrawable.setCornerRadius(170);
+        temp.setBackground(gradientDrawable);
     }
 
+    @Bind(R.id.ivCloth)
+    ImageView ivCloth;
+
+    @Bind(R.id.temp)
+    TextView temp;
 
     // ========================= 一周天气 =========================
 

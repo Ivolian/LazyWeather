@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/md_amber_200"
+    android:orientation="horizontal">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_heightPercent="30%sh">
+
+            <com.mikepenz.iconics.view.IconicsImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:iiv_color="@color/md_white"
+                app:iiv_icon="faw-cloud"
+                app:layout_heightPercent="15%sh"
+                app:layout_widthPercent="30%w" />
+
+            <TextView
+                android:id="@+id/tv_action_temp_weath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_action_weather"
+                android:text="多云"
+                android:textColor="@color/md_white"
+                app:layout_textSizePercent="3%sh" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_heightPercent="30%sh">
+
+            <TextView
+                android:id="@+id/tv_action_image1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="12"
+                android:textColor="@color/md_white"
+                app:layout_heightPercent="15%sh"
+                app:layout_textSizePercent="10%sh"
+                app:layout_widthPercent="30%w" />
+
+            <TextView
+                android:id="@+id/tv_action_temp_weath1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_action_weather"
+                android:text="12°"
+                android:textColor="@color/md_white"
+                app:layout_textSizePercent="3%sh" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_heightPercent="30%sh">
+
+            <com.mikepenz.iconics.view.IconicsImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:iiv_color="@color/md_white"
+                app:iiv_icon="faw-child"
+                app:layout_heightPercent="15%sh"
+                app:layout_widthPercent="30%w" />
+
+            <TextView
+                android:id="@+id/tv_action_temp_temp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_action_weather"
+                android:text="不适宜外界运动"
+                android:textColor="@color/md_white"
+                app:layout_textSizePercent="3%sh" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_heightPercent="30%sh">
+
+            <TextView
+                android:id="@+id/tv_action_temp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="良"
+                android:textColor="@color/md_white"
+                app:layout_heightPercent="15%sh"
+                app:layout_textSizePercent="10%sh"
+                app:layout_widthPercent="30%w" />
+
+            <TextView
+                android:id="@+id/tv_action_temp_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_action_weather"
+                android:text="空气良 55"
+                android:textColor="@color/md_white"
+                app:layout_textSizePercent="3%sh" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_heightPercent="30%sh">
+
+            <com.mikepenz.iconics.view.IconicsImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:iiv_color="@color/md_white"
+                app:iiv_icon="faw-flag-o"
+                app:layout_heightPercent="15%sh"
+                app:layout_widthPercent="30%w" />
+
+            <TextView
+                android:id="@+id/tv_action_temp_num1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_action_weather"
+                android:text="东北风 1 级"
+                android:textColor="@color/md_white"
+                app:layout_textSizePercent="3%sh" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_heightPercent="30%sh">
+
+            <com.mikepenz.iconics.view.IconicsImageView
+                android:id="@+id/iv_more"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:iiv_color="@color/md_white"
+                app:iiv_icon="faw-plus"
+                app:layout_heightPercent="15%sh"
+                app:layout_widthPercent="30%w" />
+
+            <TextView
+                android:id="@+id/tv_action_temp_num2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_action_weather"
+                android:text="添加更多"
+                android:textColor="@color/md_white"
+                app:layout_textSizePercent="3%sh" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>
