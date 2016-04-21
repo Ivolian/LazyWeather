@@ -23,6 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/md_white"
+                android:textStyle="bold"
                 app:layout_textSizePercent="2.8%sh" />
 
             <TextView
@@ -43,18 +44,19 @@
 
             <com.zhy.android.percent.support.PercentLinearLayout
                 android:id="@+id/square"
-                app:layout_heightPercent="13%sh"
-                app:layout_widthPercent="13%sh"
                 android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:layout_height="0dp">
+                app:layout_heightPercent="13%sh"
+                app:layout_widthPercent="13%sh">
 
                 <TextView
                     android:id="@+id/tvWeather"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/md_white"
+                    android:textStyle="bold"
                     app:layout_textSizePercent="3.2%sh" />
 
                 <TextView

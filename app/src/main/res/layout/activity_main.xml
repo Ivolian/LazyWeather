@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/slidingPanel"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slidingPanel"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -39,7 +39,7 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 app:iiv_color="@color/md_white"
-                app:iiv_icon="faw-bars"
+                app:iiv_icon="ion-navicon"
                 app:layout_heightPercent="3%sh"
                 app:layout_marginLeftPercent="6%sw"
                 app:layout_widthPercent="3%sh" />
@@ -48,7 +48,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="04.19/周二/谷雨"
+                android:text="04.19/周二"
                 android:textColor="@color/md_white"
                 app:layout_marginLeftPercent="2%sw"
                 app:layout_textSizePercent="2.8%sh" />
@@ -57,10 +57,10 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 app:iiv_color="@color/md_white"
-                app:iiv_icon="faw-share-alt"
-                app:layout_heightPercent="3%sh"
+                app:iiv_icon="ion-android-share-alt"
+                app:layout_heightPercent="2.6%sh"
                 app:layout_marginLeftPercent="6%sw"
-                app:layout_widthPercent="3%sh" />
+                app:layout_widthPercent="2.6%sh" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -77,7 +77,8 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:overScrollMode="never">
+            android:overScrollMode="never"
+            android:scrollbars="none">
 
             <com.zhy.android.percent.support.PercentLinearLayout
                 android:layout_width="match_parent"
