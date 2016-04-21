@@ -1,6 +1,8 @@
 package femade.lazyweather;
 
+import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.widget.SlidingPaneLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private void initViews() {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         initRvWeekWeather();
+        initSlidingPanel();
     }
 
 
@@ -44,6 +47,13 @@ public class MainActivity extends AppCompatActivity {
         WeekWeatherAdapter adapter = new WeekWeatherAdapter(dataList);
         recyclerView.setAdapter(adapter);
         recyclerView.hasFixedSize();
+    }
+
+    @Bind(R.id.slidingPanel)
+    SlidingPaneLayout slidingPaneLayout;
+
+    private void initSlidingPanel(){
+     slidingPaneLayout.setSliderFadeColor(Color.TRANSPARENT);
     }
 
 

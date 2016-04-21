@@ -1,4 +1,4 @@
-package femade.lazyweather.equipment;
+package femade.lazyweather.exclude.equipment;
 
 import android.support.v4.view.PagerAdapter;
 import android.view.View;

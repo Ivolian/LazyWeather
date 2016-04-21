@@ -5,6 +5,14 @@
     <color name="colorAccent">#76A2E3</color>
 
     <color name="weekWeatherBg">#222222</color>
-    <color name="mainBg">#bfFB8181</color>
+    <color name="mainBg">#bf01A765</color>
+
+    <color name="color1">#016287</color>
+    <color name="color2">#01A765</color>
+    <color name="color3">#3399CC</color>
+    <color name="color4">#009999</color>
+
+
+
 
 </resources>

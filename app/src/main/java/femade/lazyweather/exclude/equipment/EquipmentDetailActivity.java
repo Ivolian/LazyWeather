@@ -1,4 +1,4 @@
-package femade.lazyweather.equipment;
+package femade.lazyweather.exclude.equipment;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -97,6 +97,7 @@ public class EquipmentDetailActivity extends AppCompatActivity {
     View titleBarLine;
 
     private void setScrollLister() {
+
         // 预计中的 Scroll 和 ViewPager 的滑动冲突，并没有出现。
         scrollView.setOnScrollListener(new CustomScrollView.OnScrollListener() {
             @Override

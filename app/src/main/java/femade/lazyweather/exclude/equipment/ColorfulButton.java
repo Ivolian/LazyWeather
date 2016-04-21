@@ -1,4 +1,4 @@
-package femade.lazyweather.equipment;
+package femade.lazyweather.exclude.equipment;
 
 import android.content.Context;
 import android.content.res.ColorStateList;

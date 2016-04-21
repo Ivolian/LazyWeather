@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <femade.lazyweather.equipment.CustomScrollView
+    <femade.lazyweather.exclude.equipment.CustomScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -492,7 +492,7 @@
 
         </com.zhy.android.percent.support.PercentLinearLayout>
 
-    </femade.lazyweather.equipment.CustomScrollView>
+    </femade.lazyweather.exclude.equipment.CustomScrollView>
 
     <com.zhy.android.percent.support.PercentLinearLayout
         android:layout_width="match_parent"
@@ -605,7 +605,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/md_white">
 
-                    <femade.lazyweather.equipment.ColorfulButton
+                    <femade.lazyweather.exclude.equipment.ColorfulButton
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="16dp"
@@ -616,7 +616,7 @@
                         android:textColor="@color/colorPrimary"
                         app:layout_textSizePercent="2.8%sh" />
 
-                    <femade.lazyweather.equipment.ColorfulButton
+                    <femade.lazyweather.exclude.equipment.ColorfulButton
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="16dp"
@@ -627,7 +627,7 @@
                         android:textColor="@color/colorPrimary"
                         app:layout_textSizePercent="2.8%sh" />
 
-                    <femade.lazyweather.equipment.ColorfulButton
+                    <femade.lazyweather.exclude.equipment.ColorfulButton
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="16dp"
@@ -646,7 +646,7 @@
                     android:layout_marginTop="16dp"
                     android:background="@color/md_white">
 
-                    <femade.lazyweather.equipment.ColorfulButton
+                    <femade.lazyweather.exclude.equipment.ColorfulButton
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="16dp"
@@ -657,7 +657,7 @@
                         android:textColor="@color/colorPrimary"
                         app:layout_textSizePercent="2.8%sh" />
 
-                    <femade.lazyweather.equipment.ColorfulButton
+                    <femade.lazyweather.exclude.equipment.ColorfulButton
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="16dp"
@@ -668,7 +668,7 @@
                         android:textColor="@color/colorPrimary"
                         app:layout_textSizePercent="2.8%sh" />
 
-                    <femade.lazyweather.equipment.ColorfulButton
+                    <femade.lazyweather.exclude.equipment.ColorfulButton
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="16dp"
