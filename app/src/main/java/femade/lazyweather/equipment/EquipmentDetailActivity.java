@@ -91,7 +91,7 @@ public class EquipmentDetailActivity extends AppCompatActivity {
     TextView title;
 
     @Bind(R.id.operate)
-    View operate;
+    TextView operate;
 
     @Bind(R.id.titleBarLine)
     View titleBarLine;
@@ -118,12 +118,16 @@ public class EquipmentDetailActivity extends AppCompatActivity {
                 if (diff > 30) {
                     cancel.setColor(ContextCompat.getColor(context, R.color.md_white));
                     title.setTextColor(ContextCompat.getColor(context, R.color.md_white));
-                    operate.setVisibility(View.INVISIBLE);
+                    title.setShadowLayer(2, 1, 1, ContextCompat.getColor(context, R.color.md_black));
+                    operate.setShadowLayer(2, 1, 1, ContextCompat.getColor(context, R.color.md_black));
+                    operate.setTextColor(ContextCompat.getColor(context, R.color.md_white));
                     titleBarLine.setVisibility(View.INVISIBLE);
                 } else {
                     cancel.setColor(ContextCompat.getColor(context, R.color.colorPrimary));
                     title.setTextColor(ContextCompat.getColor(context, R.color.md_black));
-                    operate.setVisibility(View.VISIBLE);
+                    title.setShadowLayer(0, 1, 1, ContextCompat.getColor(context, R.color.md_black));
+                    operate.setShadowLayer(0, 1, 1, ContextCompat.getColor(context, R.color.md_black));
+                    operate.setTextColor(ContextCompat.getColor(context, R.color.colorPrimary));
                     titleBarLine.setVisibility(View.VISIBLE);
                 }
             }
@@ -163,7 +167,7 @@ public class EquipmentDetailActivity extends AppCompatActivity {
 
     }
 
-    @OnClick(R.id.operate)
+    @OnClick(R.id.operateContianer)
     public void operateOnClick() {
         if (animating) {
             return;
