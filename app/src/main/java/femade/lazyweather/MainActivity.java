@@ -1,10 +1,8 @@
 package femade.lazyweather;
 
-import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
-import android.support.v4.widget.SlidingPaneLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -70,11 +68,10 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.hasFixedSize();
     }
 
-    @Bind(R.id.slidingPanel)
-    SlidingPaneLayout slidingPaneLayout;
+//    @Bind(R.id.slidingPanel)
+//    MySlidingPaneLayout slidingPaneLayout;
 
     private void initSlidingPanel(){
-     slidingPaneLayout.setSliderFadeColor(Color.TRANSPARENT);
     }
 
 
