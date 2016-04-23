@@ -19,6 +19,203 @@
 
     </com.zhy.android.percent.support.PercentFrameLayout>
 
+    <com.zhy.android.percent.support.PercentFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/weekWeatherBg">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/weekWeatherBg"
+            android:orientation="vertical"
+            app:layout_marginLeftPercent="25%sw"
+            app:layout_widthPercent="75%sw">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_heightPercent="10%sh">
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    app:iiv_color="@color/grey"
+                    app:iiv_icon="ion-ios-timer-outline"
+                    app:layout_heightPercent="4.2%sh"
+                    app:layout_widthPercent="4.2%sh" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="提醒"
+                    android:textColor="@color/grey"
+                    app:layout_textSizePercent="3.0%sh" />
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_heightPercent="10%sh">
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    app:iiv_color="@color/grey"
+                    app:iiv_icon="ion-ios-gear-outline"
+                    app:layout_heightPercent="4.2%sh"
+                    app:layout_widthPercent="4.2%sh" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="设置"
+                    android:textColor="@color/grey"
+                    app:layout_textSizePercent="3.0%sh" />
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_heightPercent="10%sh">
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    app:iiv_color="@color/grey"
+                    app:iiv_icon="ion-paper-airplane"
+                    app:layout_heightPercent="4.2%sh"
+                    app:layout_widthPercent="4.2%sh" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="支持"
+                    android:textColor="@color/grey"
+                    app:layout_textSizePercent="3.0%sh" />
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/grey2"
+                app:layout_heightPercent="8%sh">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="城市管理"
+                    android:textColor="@color/grey3"
+                    app:layout_textSizePercent="2.6%sh" />
+
+
+            </com.zhy.android.percent.support.PercentFrameLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_heightPercent="10%sh">
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    app:iiv_color="@color/grey"
+                    app:iiv_icon="ion-ios-plus-outline"
+                    app:layout_heightPercent="4.2%sh"
+                    app:layout_widthPercent="4.2%sh" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="添加"
+                    android:textColor="@color/grey"
+                    app:layout_textSizePercent="3.0%sh" />
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_heightPercent="10%sh">
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    app:iiv_color="@color/grey"
+                    app:iiv_icon="ion-ios-navigate-outline"
+                    app:layout_heightPercent="4.2%sh"
+                    app:layout_widthPercent="4.2%sh" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="定位"
+                    android:textColor="@color/grey"
+                    app:layout_textSizePercent="3.0%sh" />
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_heightPercent="10%sh">
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    app:iiv_color="@color/grey"
+                    app:iiv_icon="ion-ios-navigate-outline"
+                    app:layout_heightPercent="4.2%sh"
+                    app:layout_widthPercent="4.2%sh" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="上海"
+                    android:textColor="@color/grey"
+                    app:layout_textSizePercent="3.0%sh" />
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentFrameLayout>
+
     <!-- 主界面 -->
     <com.zhy.android.percent.support.PercentLinearLayout
         android:layout_width="match_parent"
@@ -93,15 +290,17 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:id="@+id/textview"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
                         android:gravity="center"
                         android:lineSpacingMultiplier="0.86"
                         android:text="晴间\n多云"
                         android:textColor="@color/md_white"
                         android:textStyle="bold"
                         app:layout_marginBottomPercent="12%sh"
-                        app:layout_marginTopPercent="18%sh"
+                        app:layout_marginTopPercent="17%sh"
                         app:layout_textSizePercent="14%sh" />
 
                     <!-- actions start -->
@@ -267,6 +466,263 @@
                 </com.zhy.android.percent.support.PercentLinearLayout>
 
 
+                <!-- next time weather start-->
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/md_white"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp"
+                    android:paddingTop="16dp">
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        app:layout_heightPercent="8.5%sh">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="未来5小时>"
+                            android:textColor="@color/colorPrimaryDark"
+                            app:layout_textSizePercent="4%sh" />
+
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:iiv_color="@color/md_grey_400"
+                            app:iiv_icon="ion-navicon"
+                            app:layout_heightPercent="4%sh"
+                            app:layout_widthPercent="4%sh" />
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        app:layout_heightPercent="17%sh">
+
+                        <femade.lazyweather.exclude.equipment.CircleTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center"
+                            android:text="20点"
+                            android:textColor="@color/md_white"
+                            app:layout_heightPercent="10%sh"
+                            app:layout_textSizePercent="3%sh"
+                            app:layout_widthPercent="10%sh" />
+
+                        <com.zhy.android.percent.support.PercentLinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="多云 19°"
+                                android:textColor="@color/md_teal_400"
+                                app:layout_textSizePercent="4%sh" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="东南风 三级"
+                                android:textColor="@color/colorPrimary"
+                                app:layout_textSizePercent="2.5%sh" />
+
+                        </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        app:layout_heightPercent="17%sh">
+
+                        <femade.lazyweather.exclude.equipment.CircleTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center"
+                            android:text="21点"
+                            android:textColor="@color/md_white"
+                            app:layout_heightPercent="10%sh"
+                            app:layout_textSizePercent="3%sh"
+                            app:layout_widthPercent="10%sh" />
+
+                        <com.zhy.android.percent.support.PercentLinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="多云 19°"
+                                android:textColor="@color/md_teal_400"
+                                app:layout_textSizePercent="4%sh" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="东南风 三级 5%可能有雨"
+                                android:textColor="@color/colorPrimary"
+                                app:layout_textSizePercent="2.5%sh" />
+
+                        </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        app:layout_heightPercent="17%sh">
+
+                        <femade.lazyweather.exclude.equipment.CircleTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center"
+                            android:text="22点"
+                            android:textColor="@color/md_white"
+                            app:layout_heightPercent="10%sh"
+                            app:layout_textSizePercent="3%sh"
+                            app:layout_widthPercent="10%sh" />
+
+                        <com.zhy.android.percent.support.PercentLinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="多云 18°"
+                                android:textColor="@color/md_teal_400"
+                                app:layout_textSizePercent="4%sh" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="东南风 三级 9%可能有雨"
+                                android:textColor="@color/colorPrimary"
+                                app:layout_textSizePercent="2.5%sh" />
+
+                        </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        app:layout_heightPercent="17%sh">
+
+                        <femade.lazyweather.exclude.equipment.CircleTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center"
+                            android:text="23点"
+                            android:textColor="@color/md_white"
+                            app:layout_heightPercent="10%sh"
+                            app:layout_textSizePercent="3%sh"
+                            app:layout_widthPercent="10%sh" />
+
+                        <com.zhy.android.percent.support.PercentLinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="多云 18°"
+                                android:textColor="@color/md_teal_400"
+                                app:layout_textSizePercent="4%sh" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="东南风 三级 24%可能有雨"
+                                android:textColor="@color/colorPrimary"
+                                app:layout_textSizePercent="2.5%sh" />
+
+                        </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        app:layout_heightPercent="17%sh">
+
+                        <femade.lazyweather.exclude.equipment.CircleTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center"
+                            android:text="0点"
+                            android:textColor="@color/md_white"
+                            app:layout_heightPercent="10%sh"
+                            app:layout_textSizePercent="3%sh"
+                            app:layout_widthPercent="10%sh" />
+
+                        <com.zhy.android.percent.support.PercentLinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="阵雨 17°"
+                                android:textColor="@color/md_teal_400"
+                                app:layout_textSizePercent="4%sh" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="东南风 三级 39%可能有雨"
+                                android:textColor="@color/colorPrimary"
+                                app:layout_textSizePercent="2.5%sh" />
+
+                        </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <!-- next time weather end-->
+
                 <!-- cloths start -->
 
                 <com.zhy.android.percent.support.PercentLinearLayout
@@ -274,17 +730,42 @@
                     android:layout_height="wrap_content"
                     android:background="@color/md_white"
                     android:orientation="vertical"
-                    android:paddingLeft="16dp"
-                    android:paddingBottom="30dp"
-                    android:paddingRight="16dp">
+                    android:paddingBottom="24dp"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp"
+                    android:paddingTop="16dp">
 
                     <com.zhy.android.percent.support.PercentLinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
-                        app:layout_heightPercent="14%sh">
+                        app:layout_heightPercent="8.5%sh">
 
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="出行建议"
+                            android:textColor="@color/colorPrimaryDark"
+                            app:layout_textSizePercent="4%sh" />
+
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:iiv_color="@color/md_grey_400"
+                            app:iiv_icon="ion-navicon"
+                            app:layout_heightPercent="4%sh"
+                            app:layout_widthPercent="4%sh" />
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        app:layout_heightPercent="10%sh">
 
                         <TextView
                             android:layout_width="0dp"
@@ -298,9 +779,9 @@
                             app:layout_widthPercent="22%sw" />
 
                         <TextView
-                            android:layout_marginLeft="4dp"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
                             android:background="@color/md_grey_600"
                             android:gravity="center"
                             android:padding="3dp"
@@ -316,25 +797,23 @@
                         android:layout_height="wrap_content">
 
                         <ImageView
-                            android:scaleType="fitXY"
                             android:id="@+id/ivCloth"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
+                            android:scaleType="fitXY"
                             app:layout_heightPercent="70%sh" />
 
                         <TextView
                             android:id="@+id/temp"
-                            android:textColor="@color/md_white"
-                            android:text="19°"
-                            android:textSize="20dp"
-                            android:gravity="center"
-                            android:background="@color/md_amber_200"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:layout_gravity="top|right"
-                            android:layout_marginRight="30dp"
-                            android:layout_marginTop="30dp"
-                            />
+                            android:layout_marginRight="24dp"
+                            android:layout_marginTop="24dp"
+                            android:gravity="center"
+                            android:text="19°"
+                            android:textColor="@color/md_white"
+                            android:textSize="25dp" />
 
                     </com.zhy.android.percent.support.PercentFrameLayout>
 
@@ -347,5 +826,6 @@
         </ScrollView>
 
     </com.zhy.android.percent.support.PercentLinearLayout>
+
 
 </femade.lazyweather.MySlidingPaneLayout>

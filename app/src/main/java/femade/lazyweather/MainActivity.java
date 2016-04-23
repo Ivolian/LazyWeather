@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         initRvWeekWeather();
         initSlidingPanel();
 
-        String url =  "http://tu.webps.cn/tb/img/4/TB1qYlmHVXXXXaUXpXXXXXXXXXX_%21%210-item_pic.jpg";
+        String url =  "http://att2.citysbs.com/hangzhou/2014/07/13/22/middle_1000x1488-222332_10481405261412656_d18ae3b3e303625efe0f082a6828fd53.jpg";
         Glide.with(this).load(url).into(ivCloth);
 
 
@@ -73,6 +73,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void initSlidingPanel(){
     }
+
+
 
 
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#01B795</color>
-    <color name="colorPrimaryDark">#004d40</color>
-    <color name="colorAccent">#76A2E3</color>
+    <color name="colorPrimary">@color/md_teal_200</color>
+    <color name="colorPrimaryDark">@color/md_teal_400</color>
+    <color name="colorAccent">@color/md_teal_200</color>
 
     <color name="weekWeatherBg">#222222</color>
     <color name="mainBg">#bf01B795</color>
@@ -11,6 +11,10 @@
     <color name="color2">#01A765</color>
     <color name="color3">#3399CC</color>
     <color name="color4">#009999</color>
+
+    <color name="grey">#8A8A8A</color>
+    <color name="grey2">#1B1B1B</color>
+    <color name="grey3">#5A5A5A</color>
 
 
 
